@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+.spyproject
+
+
+*.skb
+*.mgh
+*.pyc
+*.tif
+*.h5
+*.error
+*.complete
+*.processing
+*.log
+*__pycache__*
+

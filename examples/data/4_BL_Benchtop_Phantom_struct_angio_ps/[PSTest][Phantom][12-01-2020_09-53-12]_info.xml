@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<data_info>
+	<dataFilePath>F:/OFDIData/[Damon]/[PSTest]/[PSTest][Phantom][12-01-2020_09-53-12]/[PSTest][Phantom][12-01-2020_09-53-12].ofd</dataFilePath>
+	<backgroundFilePath>F:/OFDIData/[Damon]/[PSTest]/[PSTest][Phantom][12-01-2020_09-53-12]/[PSTest][Phantom][12-01-2020_09-53-12].ofb</backgroundFilePath>
+	<startRecordingTimeStamp>2020-Dec-01 14:53:12.613219</startRecordingTimeStamp>
+	<stopRecordingTimeStamp>2020-Dec-01 14:53:13.829289</stopRecordingTimeStamp>
+	<totalALinesPerTransfer>256</totalALinesPerTransfer>
+	<totalALinesPerProcessedBScan>2048</totalALinesPerProcessedBScan>
+	<totalSamplesPerALinePerChannel>1688</totalSamplesPerALinePerChannel>
+	<totalRecordedBlocks>228</totalRecordedBlocks>
+	<totalRecordedBScans>28</totalRecordedBScans>
+	<totalAcquisitionChannels>2</totalAcquisitionChannels>
+	<interleavedSampleCount>1</interleavedSampleCount>
+	<trueImageBitDepth>16</trueImageBitDepth>
+	<savedImageBitDepth>16</savedImageBitDepth>
+	<bitEndian>little</bitEndian>
+	<preTriggerSamplesPerChannel>1688</preTriggerSamplesPerChannel>
+	<triggerType>external</triggerType>
+	<triggerMode>segmented</triggerMode>
+	<channelAVoltagemiV>1237</channelAVoltagemiV>
+	<channelBVoltagemiV>1237</channelBVoltagemiV>
+	<captureClockRateMHz>85</captureClockRateMHz>
+	<captureBoardModel>Signatec PX14400A</captureBoardModel>
+	<captureBoardSN>301910</captureBoardSN>
+	<captureBoardIndex>1</captureBoardIndex>
+	<captureBoardFW>0.18.0.0</captureBoardFW>
+	<captureBoardHardware>3.1.0.0</captureBoardHardware>
+	<captureBoardDriver>2.20.24.17</captureBoardDriver>
+	<SDKVersion>2.20.24</SDKVersion>
+	<Settings>
+		<userinterface>
+			<ui_galvoalinesperblock>2048</ui_galvoalinesperblock>
+			<ui_galvobscanspervolume>0</ui_galvobscanspervolume>
+			<ui_galvovoltagetommconversion>0.85</ui_galvovoltagetommconversion>
+			<ui_galvoxaxisscansizemm>0</ui_galvoxaxisscansizemm>
+			<ui_galvoyaxisscansizemm>15</ui_galvoyaxisscansizemm>
+			<ui_galvoxaxisoffsetmm>-5</ui_galvoxaxisoffsetmm>
+			<ui_galvoyaxisoffsetmm>0</ui_galvoyaxisoffsetmm>
+			<ui_projectfolderformat>[#projectname#]</ui_projectfolderformat>
+			<ui_sessionfolderformat>[#sessionname#]</ui_sessionfolderformat>
+			<ui_userfolderformat>[#username#]</ui_userfolderformat>
+			<ui_plotpopupx>565</ui_plotpopupx>
+			<ui_plotpopupy>510</ui_plotpopupy>
+			<ui_scanpatternswapxy>false</ui_scanpatternswapxy>
+			<ui_alineplotvertrangelow>-10</ui_alineplotvertrangelow>
+			<ui_alineplotvertrangehigh>70</ui_alineplotvertrangehigh>
+			<ui_scanpatternxaxisshift>32</ui_scanpatternxaxisshift>
+			<ui_scanpatternyaxisshift>32</ui_scanpatternyaxisshift>
+			<ui_stagehomingspeedmmpersec>1</ui_stagehomingspeedmmpersec>
+			<ui_stagejoggingspeedmmpersec>5</ui_stagejoggingspeedmmpersec>
+			<ui_stagescanningspeedmmpersec>0.3</ui_stagescanningspeedmmpersec>
+			<ui_stagestartingpositionmm>14</ui_stagestartingpositionmm>
+			<ui_stageendingpositionmm>-18</ui_stageendingpositionmm>
+		</userinterface>
+		<recording>
+			<rec_datafilesfolder>F:/OFDIData/</rec_datafilesfolder>
+		</recording>
+		<daq1>
+			<ui_alineplotvertrangelow>-10</ui_alineplotvertrangelow>
+			<ui_alineplotvertrangehigh>50</ui_alineplotvertrangehigh>
+			<proc_xmlconfigurationfilename>AlgorithmConfigMinimum.xml</proc_xmlconfigurationfilename>
+			<proc_circularizeimage>false</proc_circularizeimage>
+		</daq1>
+	</Settings>
+</data_info>

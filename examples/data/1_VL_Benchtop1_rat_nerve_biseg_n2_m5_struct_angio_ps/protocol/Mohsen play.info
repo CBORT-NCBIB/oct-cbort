@@ -1,0 +1,59 @@
+; protocol info for Vakoc OFDI system
+devices
+{
+    daq1
+    {
+	type "daq"
+        manufacturer "Alazar Tech"
+	model "AT9350"
+	boardnum 1
+	serialnum "S920750"
+	channelacaptureon true
+	channelbcaptureon true
+	channelavoltrangemiv 2000
+	channelbvoltrangemiv 2000
+	channelacoupling "DC"
+	channelbcoupling "DC"
+	capturetriggertimestamps false
+	useexternalcaptureclock false
+	internalclockratemsps 100
+	totalpresamplespertrigger 250
+	totalsamplespertrigger 1600
+	totalalinespercapture 256
+	totalalinespertransfer 512
+	totalalinesperprocessedbscan 2048
+	bscanframewidth 1024
+	bscanframeheight 1024
+	enabledigitalportoutput true
+	triggertimeoutms 0
+	triggerlevelmillivolts 1000
+	inputtriggermillivolts 5000
+	triggerslopedirection "falling"
+    }
+    outputdevice1
+    {
+   	type "outputdevice"
+   	manufacturer "Acces"
+	model "USB-DO16A"
+	device1id 0
+	device1tag "x-axis"
+	device2id 1
+	device2tag "y-axis"
+	shutter1deviceid 10
+	shutter1switchindex 2
+	shutter1tag "background1"
+	shutter1switchedstate "open"
+	disabled 0
+    }
+    networkopticaldevice1
+    {
+   	type "networkopticaldevice"
+   	manufacturer "NinePointMedical"
+	model "NvisionVLE Gen2"
+     ipaddress "169.254.2.2"
+     ipport "9764"
+     pulsestomm 25
+	pulserangemin 2400
+	pulserangemax 6975
+    }
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data_info>
+   <dataFilePath>D:/OFDIData/user.Guillermo/[p.OS5A_12_5_19]/[p.OS5A_12_5_19][s._baseline][12-05-2019_12-39-41]/[p.OS5A_12_5_19][s._baseline][12-05-2019_12-39-41].ofd</dataFilePath>
+   <backgroundFilePath>D:/OFDIData/user.Guillermo/[p.OS5A_12_5_19]/[p.OS5A_12_5_19][s._baseline][12-05-2019_12-39-41]/[p.OS5A_12_5_19][s._baseline][12-05-2019_12-39-41].ofb</backgroundFilePath>
+   <laserFilePath>C:/ofdi.library/ofdi.configfiles/Calibration files/Pair4/[2019-09-19][16-17-32][Y].laser</laserFilePath>
+   <dispersionFilePath>C:/ofdi.library/ofdi.configfiles/Calibration files/Pair4/[2019-09-19][16-17-32][Y].dispersion</dispersionFilePath>
+   <startRecordingTimeStamp>2019-Dec-05 18:39:41.695483</startRecordingTimeStamp>
+   <stopRecordingTimeStamp>not-a-date-time</stopRecordingTimeStamp>
+   <totalALinesPerCapture>256</totalALinesPerCapture>
+   <totalALinesPerProcessedBScan>3072</totalALinesPerProcessedBScan>
+   <totalSamplesPerALinePerChannel>3840</totalSamplesPerALinePerChannel>
+   <totalAcquisitionChannels>2</totalAcquisitionChannels>
+   <totalRecordedBlocks>12</totalRecordedBlocks>
+   <totalRecordedBScans>1</totalRecordedBScans>
+   <totalRecordedVolumes>1</totalRecordedVolumes>
+   <totalBScansPerVolume>1776</totalBScansPerVolume>
+   <trueImageBitDepth>12</trueImageBitDepth>
+   <savedImageBitDepth>16</savedImageBitDepth>
+   <bitEndian>little</bitEndian>
+   <preTriggerSamplesPerChannel>500</preTriggerSamplesPerChannel>
+   <internalCaptureClockRateMSpS>250</internalCaptureClockRateMSpS>
+   <captureBoardModel>AlazarTech ATS9350</captureBoardModel>
+   <captureBoardSN>920750</captureBoardSN>
+   <captureBoardIndex>1</captureBoardIndex>
+   <captureBoardDriver>6.1.2</captureBoardDriver>
+   <SDKVersion>6.1.2</SDKVersion>
+   <Settings>
+      <userinterface>
+         <ui_boostlocaltimezone>MST-6MDT,M3.2.0,M11.1.0</ui_boostlocaltimezone>
+         <ui_plotpopupx>189</ui_plotpopupx>
+         <ui_plotpopupy>623</ui_plotpopupy>
+         <ui_scanpatternfilefolder>C:/ofdi.scanpatterns</ui_scanpatternfilefolder>
+         <ui_scanpatternselrootname>SINGLEFRAME_BiSeg_SPARC_LargeY (N=2)(M=5),592x1776</ui_scanpatternselrootname>
+         <ui_scanpatternxaxisfov>28</ui_scanpatternxaxisfov>
+         <ui_scanpatternxaxisoffset>34568</ui_scanpatternxaxisoffset>
+         <ui_scanpatternyaxisfov>35</ui_scanpatternyaxisfov>
+         <ui_scanpatternswapxy>false</ui_scanpatternswapxy>
+         <ui_scanpatternyaxisoffset>33848</ui_scanpatternyaxisoffset>
+         <ui_projectfolderformat>[p.#projectname#]</ui_projectfolderformat>
+         <ui_sessionfolderformat>[s.#sessionname#]</ui_sessionfolderformat>
+         <ui_userfolderformat>user.#username#</ui_userfolderformat>
+         <ui_scanpatternxaxisshift>6</ui_scanpatternxaxisshift>
+         <ui_scanpatternyaxisshift>0</ui_scanpatternyaxisshift>
+         <ui_projectsparentfolder>D:/OFDIData/user.Guillermo</ui_projectsparentfolder>
+      </userinterface>
+      <recording>
+         <rec_datafilesfolder>D:/OFDIData</rec_datafilesfolder>
+      </recording>
+      <daq1>
+         <ui_alineplotvertrangelow>-50</ui_alineplotvertrangelow>
+         <ui_alineplotvertrangehigh>100</ui_alineplotvertrangehigh>
+         <proc_zoomlevel>1</proc_zoomlevel>
+         <proc_demodulation>0.4,0.0,1.0,0,0,0</proc_demodulation>
+         <proc_frequencymux>true</proc_frequencymux>
+         <proc_windowtype>Hamming</proc_windowtype>
+         <proc_tomographynumthreads>1</proc_tomographynumthreads>
+         <proc_intensitynumthreads>1</proc_intensitynumthreads>
+         <proc_angiographynumthreads>1</proc_angiographynumthreads>
+         <proc_intensitybitdepth>b_8bit</proc_intensitybitdepth>
+         <proc_angiographybitdepth>b_8bit</proc_angiographybitdepth>
+         <proc_intensitytranspose>true</proc_intensitytranspose>
+         <proc_angiographytranspose>true</proc_angiographytranspose>
+         <proc_intensityinvertgrayscale>false</proc_intensityinvertgrayscale>
+         <proc_angiographyinvertgrayscale>false</proc_angiographyinvertgrayscale>
+         <proc_intensityloglim>-10,65</proc_intensityloglim>
+         <proc_angiographyloglim>-38,66</proc_angiographyloglim>
+         <proc_intensityinterp>Cubic</proc_intensityinterp>
+         <proc_angiographyinterp>Cubic</proc_angiographyinterp>
+         <proc_angiographyzwindow>11</proc_angiographyzwindow>
+         <proc_xmlconfigurationfilename>AlgorithmConfigMinimum_1.xml</proc_xmlconfigurationfilename>
+         <proc_imagesfitwidth>true</proc_imagesfitwidth>
+         <proc_imagesfitheight>true</proc_imagesfitheight>
+         <proc_flipimagealines>true</proc_flipimagealines>
+         <proc_nzscans>2560</proc_nzscans>
+      </daq1>
+      <networkopticaldevice1>
+         <lastpulseposition>6160</lastpulseposition>
+      </networkopticaldevice1>
+   </Settings>
+</data_info>

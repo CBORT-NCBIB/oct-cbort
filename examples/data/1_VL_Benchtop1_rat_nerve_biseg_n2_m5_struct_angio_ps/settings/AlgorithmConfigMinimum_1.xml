@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AlgorithmConfigSetting>
+
+
+<CplxTomSetting>
+	
+	
+	
+
+<nSamples>3200</nSamples><nLines>2048</nLines><nZscans>1024</nZscans><!--	<mappingFileName>C:\ofdi.library\ofdi.configfiles\LINEAR.laser</mappingFileName>
+	<dispersionFileName>C:\ofdi.library\ofdi.configfiles\LINEAR.dispersion</dispersionFileName><mappingFileName>C:/ofdi.library/ofdi.configfiles/LINEAR.laser</mappingFileName><dispersionFileName>C:/ofdi.library/ofdi.configfiles/LINEAR.dispersion</dispersionFileName> --><mappingFileName>C:/ofdi.library/ofdi.configfiles/Calibration files/Pair4/[2019-09-19][16-17-32][Y].laser</mappingFileName><dispersionFileName>C:/ofdi.library/ofdi.configfiles/Calibration files/Pair4/[2019-09-19][16-17-32][Y].dispersion</dispersionFileName></CplxTomSetting><IntTomSetting>
+	
+	
+	
+	
+<logLimLow>-40</logLimLow><logLimHigh>30</logLimHigh><imgWidth>1024</imgWidth><imgDepth>2</imgDepth></IntTomSetting></AlgorithmConfigSetting>

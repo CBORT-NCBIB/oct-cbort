@@ -1,0 +1,11 @@
+cdflib
+h5py
+numpy
+scipy
+tifffile
+matplotlib
+jupyter
+napari[all]
+magicgui
+pyqtgraph
+colorcet

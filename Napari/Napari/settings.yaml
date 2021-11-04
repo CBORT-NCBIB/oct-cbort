@@ -1,0 +1,29 @@
+appearance:
+  schema_version:
+  - 0
+  - 1
+  - 0
+  theme: dark
+application:
+  console_notification_level: none
+  first_time: true
+  gui_notification_level: info
+  ipy_interactive: true
+  preferences_size: null
+  save_window_geometry: true
+  schema_version:
+  - 0
+  - 1
+  - 0
+  window_fullscreen: null
+  window_maximized: null
+  window_position: null
+  window_size: null
+  window_state: null
+  window_statusbar: true
+plugins:
+  plugins_call_order: []
+  schema_version:
+  - 0
+  - 1
+  - 0

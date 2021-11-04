@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>MainWindow &mdash; oct-cbort 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="MainWindow.__init__" href="methods/MainWindow/oct.MainWindow.__init__.html" />
+    <link rel="prev" title="OFDView.run" href="methods/OFDView/oct.OFDView.run.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> oct-cbort
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">oct-cbort</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../oct.html">oct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#load">load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#reconstruct">reconstruct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#write">write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#view">view</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../oct.html#gui">gui</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../oct.html#run-process-gui">run_process_gui</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">MainWindow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#utils">utils</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">oct-cbort</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">API Reference</a> &raquo;</li>
+        
+          <li><a href="../oct.html">oct</a> &raquo;</li>
+        
+      <li>MainWindow</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/API/modules/oct.MainWindow.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mainwindow">
+<h1>MainWindow<a class="headerlink" href="#mainwindow" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="oct.MainWindow">
+<em class="property">class </em><code class="sig-prename descclassname">oct.</code><code class="sig-name descname">MainWindow</code><a class="headerlink" href="#oct.MainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QMainWindow</span></code></p>
+<p>Main window of simple processing dispatcher gui</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/MainWindow/oct.MainWindow.__init__.html#oct.MainWindow.__init__" title="oct.MainWindow.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>()</p></td>
+<td><p>Initialize self.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/MainWindow/oct.MainWindow.chooseDirectory.html#oct.MainWindow.chooseDirectory" title="oct.MainWindow.chooseDirectory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chooseDirectory</span></code></a>()</p></td>
+<td><p>Choose and load data from a directory with an <a href="#id1"><span class="problematic" id="id2">*</span></a>.ofd file and its metadata</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/MainWindow/oct.MainWindow.processAllFrames.html#oct.MainWindow.processAllFrames" title="oct.MainWindow.processAllFrames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">processAllFrames</span></code></a>()</p></td>
+<td><p>Call the post.processFrameRange method all frames input</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/MainWindow/oct.MainWindow.processFrameRange.html#oct.MainWindow.processFrameRange" title="oct.MainWindow.processFrameRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">processFrameRange</span></code></a>()</p></td>
+<td><p>Call the post.processFrameRange method given designated frame gui inputs</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/MainWindow/oct.MainWindow.processSingleFrame.html#oct.MainWindow.processSingleFrame" title="oct.MainWindow.processSingleFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">processSingleFrame</span></code></a>()</p></td>
+<td><p>Process a single frame for inspection</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/MainWindow/oct.MainWindow.reloadDirectory.html#oct.MainWindow.reloadDirectory" title="oct.MainWindow.reloadDirectory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reloadDirectory</span></code></a>()</p></td>
+<td><p>Loads data from a directory with an <a href="#id3"><span class="problematic" id="id4">*</span></a>.ofd file and its metadata</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AllowNestedDocks</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AllowTabbedDocks</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AnimatedDocks</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawChildren</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawWindowBackground</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceTabbedDocks</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">GroupedDragging</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IgnoreMask</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmDepth</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmDevicePixelRatio</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmDevicePixelRatioScaled</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmDpiX</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmDpiY</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmHeight</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmHeightMM</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmNumColors</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmPhysicalDpiX</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmPhysicalDpiY</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmWidth</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PdmWidthMM</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VerticalTabs</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">customContextMenuRequested</span></code></p></td>
+<td><p>customContextMenuRequested(self, QPoint) [signal]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">destroyed</span></code></p></td>
+<td><p>QObject = None) [signal]</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">iconSizeChanged</span></code></p></td>
+<td><p>iconSizeChanged(self, QSize) [signal]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">objectNameChanged</span></code></p></td>
+<td><p>objectNameChanged(self, str) [signal]</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">staticMetaObject</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tabifiedDockWidgetActivated</span></code></p></td>
+<td><p>tabifiedDockWidgetActivated(self, QDockWidget) [signal]</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">toolButtonStyleChanged</span></code></p></td>
+<td><p>toolButtonStyleChanged(self, Qt.ToolButtonStyle) [signal]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">windowIconChanged</span></code></p></td>
+<td><p>windowIconChanged(self, QIcon) [signal]</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">windowIconTextChanged</span></code></p></td>
+<td><p>windowIconTextChanged(self, str) [signal]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">windowTitleChanged</span></code></p></td>
+<td><p>windowTitleChanged(self, str) [signal]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="methods/MainWindow/oct.MainWindow.__init__.html" class="btn btn-neutral float-right" title="MainWindow.__init__" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="methods/OFDView/oct.OFDView.run.html" class="btn btn-neutral float-left" title="OFDView.run" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, CBORT @ Wellman.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

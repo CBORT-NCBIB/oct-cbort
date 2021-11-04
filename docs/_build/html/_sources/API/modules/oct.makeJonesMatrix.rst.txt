@@ -1,0 +1,4 @@
+makeJonesMatrix
+===============
+
+.. autofunction:: oct.makeJonesMatrix

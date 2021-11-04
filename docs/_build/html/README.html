@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>oct-cbort &mdash; oct-cbort 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="API/index.html" />
+    <link rel="prev" title="oct-cbort" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> oct-cbort
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">oct-cbort</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#steps-to-begin-processing-on-a-new-machine">Steps to begin processing on a new machine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage-tutorials">Usage tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contributing">Contributing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issues">Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="API/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">oct-cbort</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>oct-cbort</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/README.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="oct-cbort">
+<h1>oct-cbort<a class="headerlink" href="#oct-cbort" title="Permalink to this headline">¶</a></h1>
+<p>A python package for reconstructing raw OCT/OFDI data from the Center for Biomedical OCT Research &#64; The Wellman Center for Photomedicine.<br /><a class="reference external" href="https://octresearch.org/">https://octresearch.org/</a></p>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Unlike traditional imaging modalities, OCT contrasts requires “reconstruction” of the acquired interferometric fringes. With this in mind, the <code class="docutils literal notranslate"><span class="pre">oct-cbort</span></code> Python package serves the following purposes:</p>
+<ol class="simple">
+<li><p>When coupled with acquisition frameworks, the package allows for automated processing of raw OCT data into analyzable endpoint images with no/minimal user input. This is desirable for <em>users</em> of OCT technology, whose primary goal is to view OCT images.</p></li>
+<li><p>The package has been designed in a modular format to allow for “scripting”, namely for OCT contrast <em>developpers</em>. The ability to write Python scripts in Jupyter Notebooks alongside core reconstruction algorithms and validated priors allows for the rapid debugging and creation of novel algorithms.</p></li>
+<li><p>Finally, the package is a general tool for dissemination, education and rapid community uptake of novel contrast algorithms developped at CBORT.</p></li>
+</ol>
+</div>
+<div class="section" id="steps-to-begin-processing-on-a-new-machine">
+<h2>Steps to begin processing on a new machine<a class="headerlink" href="#steps-to-begin-processing-on-a-new-machine" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>Install Anaconda (choose to install with conda exec in PATH) and GitHub Desktop</p></li>
+<li><p>Clone or download oct-cbort code from GitHub</p></li>
+<li><p>Open terminal (MacOS/Linux) or command prompt (Windows) and type:<br /><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">oct38</span> <span class="pre">python=3.8</span></code>
+<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">oct38</span></code></p></li>
+<li><p>Install requirements:</p>
+<p>3.1 For CPU processing :<br /><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code><br />3.2 For GPU processing :<br />3.2.1  Install NVIDIA Cuda toolkit (V11.0) (for nvcc)<br />3.2.2 <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">anaconda</span> <span class="pre">cudatoolkit=11</span></code> (for cuda and cudnn)<br />3.2.3 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements-gpu.txt</span></code> (for rest of dep. including cupy)</p>
+</li>
+<li><p>Within the terminal navigate to <code class="docutils literal notranslate"><span class="pre">oct-cbort</span></code>  directory (ie. cd Documents\Github\oct-cbort) and run a first test by processing example data by typing:<br /><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">examples/3.py</span></code></p></li>
+<li><p>Run processing on a directory with desired settings:<br />5.1 For all frames in file:<br /><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">reconstruction</span> <span class="pre">E:\OFDIData\user.Damon\[p.SPARC_Phantom][s.BirefPhant_0125_7][01-25-2019_15-06-24]</span> <span class="pre">tomo+struct+angio+ps</span> <span class="pre">mgh</span> <span class="pre">all</span></code><br />5.2 For a range of frames:<br /><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">reconstruction</span> <span class="pre">C:\Users\ofdi_process_six\Desktop\[p.SPARC][s.CalibTest_holder_ChkNerve_NoChange_2][11-24-2018_11-41-52]</span> <span class="pre">tomo+angio+struct</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mgh+tif</span> <span class="pre">1-10</span></code><br />5.3 For a very simply gui:<br /><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">oct</span></code></p></li>
+<li><p>For Jupyter debugging, some useful widgets:
+To install these type in terminal:<br /><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupyter_contrib_nbextensions</span> <span class="pre">jupyter_nbextensions_configurator</span>&#160; </code></p></li>
+</ol>
+</div>
+<div class="section" id="usage-tutorials">
+<h2>Usage tutorials<a class="headerlink" href="#usage-tutorials" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter notebook tutorials are found in /examples/notebooks. These notebooks are always updated and show how to use the library for more technical scripting purposes.</p>
+</div>
+<div class="section" id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
+<p>To contribute, please create your own branch, develop on it, and once your addition is tested and create “pull request” for administrators to look over before adding to the master branch.</p>
+</div>
+<div class="section" id="issues">
+<h2>Issues<a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h2>
+<p>If there are issues or bugs, please submit as much information as possible to the issue channel of the repository for future debugging and tracking.</p>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>While the repository is not currently public, and therefore there is no public document hosting, we do provide some <em>unfinished</em> documentation!</p>
+<p>To view the documentation, simply navigate to the oct-cbort directory and type the following in the cmd\terminal:</p>
+<p><code class="docutils literal notranslate"> <span class="pre">python</span> <span class="pre">docs\docs.py</span></code></p>
+<p>This will launch the built html files in your web browser.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="API/index.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="oct-cbort" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, CBORT @ Wellman.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

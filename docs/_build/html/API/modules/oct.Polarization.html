@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Polarization &mdash; oct-cbort 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Polarization.__init__" href="methods/Polarization/oct.Polarization.__init__.html" />
+    <link rel="prev" title="Angiography.setSettings" href="methods/Angiography/oct.Angiography.setSettings.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> oct-cbort
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">oct-cbort</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../oct.html">oct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#load">load</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../oct.html#reconstruct">reconstruct</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../oct.html#tomogram">tomogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oct.html#structure">structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../oct.html#angiography">angiography</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../oct.html#polarization">polarization</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Polarization</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#write">write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#view">view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#gui">gui</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../oct.html#utils">utils</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">oct-cbort</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">API Reference</a> &raquo;</li>
+        
+          <li><a href="../oct.html">oct</a> &raquo;</li>
+        
+      <li>Polarization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/API/modules/oct.Polarization.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="polarization">
+<h1>Polarization<a class="headerlink" href="#polarization" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="oct.Polarization">
+<em class="property">class </em><code class="sig-prename descclassname">oct.</code><code class="sig-name descname">Polarization</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mode</span><span class="o">=</span><span class="default_value">'sym'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#oct.Polarization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Polarization contrast OCT reconstruction</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.__init__.html#oct.Polarization.__init__" title="oct.Polarization.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([mode])</p></td>
+<td><p>Initialize self.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.classic.html#oct.Polarization.classic" title="oct.Polarization.classic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">classic</span></code></a>()</p></td>
+<td><p>Compute retardance, degree of polarization, and optic axis frames from PS sensitive datasets</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.clearPadding.html#oct.Polarization.clearPadding" title="oct.Polarization.clearPadding"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearPadding</span></code></a>(img)</p></td>
+<td><p>Deletes padding if exists</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.formaThetaOut.html#oct.Polarization.formaThetaOut" title="oct.Polarization.formaThetaOut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">formaThetaOut</span></code></a>(oa[, shift])</p></td>
+<td><p>Format the output oa array to numpy uint8 :param oa: Un-formatted float apparent optic axis array - Scale [-pi,pi] :type oa: array</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.formatDopOut.html#oct.Polarization.formatDopOut" title="oct.Polarization.formatDopOut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">formatDopOut</span></code></a>(dop)</p></td>
+<td><p>Format the output dop array to numpy uint8 :param dop: Un-formatted float apparent degree of polarization array - Scale [0,1] :type dop: array</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.formatOaOut.html#oct.Polarization.formatOaOut" title="oct.Polarization.formatOaOut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">formatOaOut</span></code></a>(oa)</p></td>
+<td><p>Format the output oa array to numpy uint8 :param oa: Un-formatted float apparent optic axis array - Scale [-pi,pi] :type oa: array</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.formatOut.html#oct.Polarization.formatOut" title="oct.Polarization.formatOut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">formatOut</span></code></a>(oa, dop)</p></td>
+<td><p>Format output contrasts to uint8</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.formatRetOut.html#oct.Polarization.formatRetOut" title="oct.Polarization.formatRetOut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">formatRetOut</span></code></a>(oa[, dn])</p></td>
+<td><p>Format the output ret array to numpy uint8, according to ps settings</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.initialize.html#oct.Polarization.initialize" title="oct.Polarization.initialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code></a>([data, settings])</p></td>
+<td><p>Initialize the PS portion of the reconstruction with desired settings .. note::.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.manageChannels.html#oct.Polarization.manageChannels" title="oct.Polarization.manageChannels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">manageChannels</span></code></a>()</p></td>
+<td><p>Handle case where only channel 2’s are passed</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.measurementMat.html#oct.Polarization.measurementMat" title="oct.Polarization.measurementMat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">measurementMat</span></code></a>()</p></td>
+<td><p>Compute retardance, degree of polarization, and optic axis frames from PS sensitive datasets</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.realTime.html#oct.Polarization.realTime" title="oct.Polarization.realTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">realTime</span></code></a>()</p></td>
+<td><p>Compute retardance, degree of polarization, and optic axis frames from PS sensitive datasets</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.reconstruct.html#oct.Polarization.reconstruct" title="oct.Polarization.reconstruct"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reconstruct</span></code></a>([sv1, sv2, data, settings, …])</p></td>
+<td><p>Reconstruct ps contrast frames</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.requires.html#oct.Polarization.requires" title="oct.Polarization.requires"><code class="xref py py-obj docutils literal notranslate"><span class="pre">requires</span></code></a>()</p></td>
+<td><p>Prints out the required/optional variables to perform reconstruction</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.setOutputName.html#oct.Polarization.setOutputName" title="oct.Polarization.setOutputName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setOutputName</span></code></a>()</p></td>
+<td><p>Creates output name string, given input settings</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.setSettings.html#oct.Polarization.setSettings" title="oct.Polarization.setSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSettings</span></code></a>([data, settings])</p></td>
+<td><p>Sets the reconstruction settings for ps contrast Notes:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.spectralBinning.html#oct.Polarization.spectralBinning" title="oct.Polarization.spectralBinning"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectralBinning</span></code></a>()</p></td>
+<td><p>Compute retardance, degree of polarization, and optic axis frames from PS sensitive datasets</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="methods/Polarization/oct.Polarization.symmetric.html#oct.Polarization.symmetric" title="oct.Polarization.symmetric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symmetric</span></code></a>()</p></td>
+<td><p>Compute retardance, degree of polarization, and optic axis frames from PS sensitive datasets</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="methods/Polarization/oct.Polarization.__init__.html" class="btn btn-neutral float-right" title="Polarization.__init__" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="methods/Angiography/oct.Angiography.setSettings.html" class="btn btn-neutral float-left" title="Angiography.setSettings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, CBORT @ Wellman.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+decomposeCorrection
+===================
+
+.. autofunction:: oct.decomposeCorrection

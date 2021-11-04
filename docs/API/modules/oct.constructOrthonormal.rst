@@ -1,0 +1,4 @@
+constructOrthonormal
+====================
+
+.. autofunction:: oct.constructOrthonormal

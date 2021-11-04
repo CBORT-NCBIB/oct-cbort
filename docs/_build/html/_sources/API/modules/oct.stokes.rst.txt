@@ -1,0 +1,4 @@
+stokes
+======
+
+.. autofunction:: oct.stokes

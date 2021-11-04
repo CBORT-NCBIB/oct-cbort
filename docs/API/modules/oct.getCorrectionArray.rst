@@ -1,0 +1,4 @@
+getCorrectionArray
+==================
+
+.. autofunction:: oct.getCorrectionArray

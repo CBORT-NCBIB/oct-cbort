@@ -1,0 +1,4 @@
+filtNormStokes
+==============
+
+.. autofunction:: oct.filtNormStokes

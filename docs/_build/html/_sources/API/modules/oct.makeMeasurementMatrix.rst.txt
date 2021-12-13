@@ -1,0 +1,4 @@
+makeMeasurementMatrix
+=====================
+
+.. autofunction:: oct.makeMeasurementMatrix

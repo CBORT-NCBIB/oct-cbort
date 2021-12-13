@@ -1,0 +1,658 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>oct &mdash; oct-cbort 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Post" href="modules/oct.Post.html" />
+    <link rel="prev" title="API Reference" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> oct-cbort
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../README.html">oct-cbort</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">oct</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#post">post</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Post.html">Post</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#load">load</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data">data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Load.html">Load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Dataset.html">Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.BoumaDataset.html">BoumaDataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.VakocDataset.html">VakocDataset</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#fringe">fringe</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Fringe.html">Fringe</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#metadata">metadata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Metadata.html">Metadata</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#reconstruct">reconstruct</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tomogram">tomogram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Tomogram.html">Tomogram</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#structure">structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Structure.html">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#angiography">angiography</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Angiography.html">Angiography</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#polarization">polarization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Polarization.html">Polarization</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#write">write</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#writer">writer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Writer.html">Writer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#view">view</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#colormap">colormap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Colormap.html">Colormap</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#projection">projection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Project.html">Project</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#processed">processed</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.Processed.html">Processed</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mgh">mgh</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.MGHView.html">MGHView</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ofd">ofd</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.OFDView.html">OFDView</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gui">gui</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#run-process-gui">run_process_gui</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.MainWindow.html">MainWindow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#utils">utils</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">utils</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.checkForCupy.html">checkForCupy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.normalizeData.html">normalizeData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.str2bool.html">str2bool</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.closestDividableNumber.html">closestDividableNumber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.nextPowerOf2.html">nextPowerOf2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.rotCartesianInterp.html">rotCartesianInterp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.showProcessedData.html">showProcessedData</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#psutils">psUtils</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.stokes.html">stokes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.unweaveInputPolarizations.html">unweaveInputPolarizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.filtNormStokes.html">filtNormStokes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.constructOrthonormal.html">constructOrthonormal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.computeDOP.html">computeDOP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.applyRotation.html">applyRotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.getSymmetryCorrection.html">getSymmetryCorrection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.getBinCorrection.html">getBinCorrection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.getCorrectionArray.html">getCorrectionArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.makeRotationMatrix.html">makeRotationMatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.makeMeasurementMatrix.html">makeMeasurementMatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.makeJonesMatrix.html">makeJonesMatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.decomposeRot.html">decomposeRot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.decomposeCorrection.html">decomposeCorrection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.decomposeJonesMatrix.html">decomposeJonesMatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modules/oct.unwrapCorrection.html">unwrapCorrection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">oct-cbort</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">API Reference</a> &raquo;</li>
+        
+      <li>oct</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/API/oct.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>API Reference for the oct-cbort package</p>
+<div class="section" id="module-oct">
+<span id="oct"></span><h1>oct<a class="headerlink" href="#module-oct" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="post">
+<h2>post<a class="headerlink" href="#post" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Post.html#oct.Post" title="oct.Post"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Post</span></code></a>()</p></td>
+<td><p>A post-processing object for managing pipeline of OCT processing after acquisition</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="load">
+<h1>load<a class="headerlink" href="#load" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="data">
+<h2>data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Load.html#oct.Load" title="oct.Load"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Load</span></code></a>(directory, *args, **kwargs)</p></td>
+<td><p>Check directory contents and create corresponding dataset</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.Dataset.html#oct.Dataset" title="oct.Dataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dataset</span></code></a>([mode])</p></td>
+<td><p>Creates a dataset ready to be processed, from metadata and fringe data</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.BoumaDataset.html#oct.BoumaDataset" title="oct.BoumaDataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoumaDataset</span></code></a>(directory[, df])</p></td>
+<td><p>Load metadata for Bouma format data</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.VakocDataset.html#oct.VakocDataset" title="oct.VakocDataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VakocDataset</span></code></a>(directory[, df])</p></td>
+<td><p>Load metadata for Vakoc format data</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fringe">
+<h2>fringe<a class="headerlink" href="#fringe" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Fringe.html#oct.Fringe" title="oct.Fringe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Fringe</span></code></a>([mode])</p></td>
+<td><p>Load fringe data from a .ofd file</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="metadata">
+<h2>metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Metadata.html#oct.Metadata" title="oct.Metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Metadata</span></code></a>()</p></td>
+<td><p>Store all the metadata loaded during initialization</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="reconstruct">
+<h1>reconstruct<a class="headerlink" href="#reconstruct" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tomogram">
+<h2>tomogram<a class="headerlink" href="#tomogram" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Tomogram.html#oct.Tomogram" title="oct.Tomogram"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tomogram</span></code></a>([mode])</p></td>
+<td><p>Tomogram reconstruction for OCT</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="structure">
+<h2>structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Structure.html#oct.Structure" title="oct.Structure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure</span></code></a>([mode])</p></td>
+<td><p>Structure contrast OCT reconstruction</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="angiography">
+<h2>angiography<a class="headerlink" href="#angiography" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Angiography.html#oct.Angiography" title="oct.Angiography"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Angiography</span></code></a>([mode])</p></td>
+<td><p>Angiography contrast OCT reconstruction</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="polarization">
+<h2>polarization<a class="headerlink" href="#polarization" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Polarization.html#oct.Polarization" title="oct.Polarization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Polarization</span></code></a>([mode])</p></td>
+<td><p>Polarization contrast OCT reconstruction</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="write">
+<h1>write<a class="headerlink" href="#write" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="writer">
+<h2>writer<a class="headerlink" href="#writer" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Writer.html#oct.Writer" title="oct.Writer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Writer</span></code></a>()</p></td>
+<td><p>A writing object for saving processed images as they are reconstructed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="view">
+<h1>view<a class="headerlink" href="#view" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="colormap">
+<h2>colormap<a class="headerlink" href="#colormap" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Colormap.html#oct.Colormap" title="oct.Colormap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Colormap</span></code></a>([cmapLabel])</p></td>
+<td><p>Generate an rgb frame from a greyscale using a chosen colormap</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="projection">
+<h2>projection<a class="headerlink" href="#projection" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Project.html#oct.Project" title="oct.Project"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Project</span></code></a>()</p></td>
+<td><p>A projecting object for appending inter-aline projections</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="processed">
+<h2>processed<a class="headerlink" href="#processed" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.Processed.html#oct.Processed" title="oct.Processed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Processed</span></code></a>()</p></td>
+<td><p>A class used to load and save already processed datasets (or image files) in .mgh,.tif,.h5 or .mat format</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mgh">
+<h2>mgh<a class="headerlink" href="#mgh" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.MGHView.html#oct.MGHView" title="oct.MGHView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MGHView</span></code></a>(directory, state)</p></td>
+<td><p>A modified viewer and labeller for .mgh files built on a napari viewer</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ofd">
+<h2>ofd<a class="headerlink" href="#ofd" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.OFDView.html#oct.OFDView" title="oct.OFDView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OFDView</span></code></a>(directory, state)</p></td>
+<td><p>A real time viewer for .ofd files built on a napari viewer</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="gui">
+<h1>gui<a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="run-process-gui">
+<h2>run_process_gui<a class="headerlink" href="#run-process-gui" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.MainWindow.html#oct.MainWindow" title="oct.MainWindow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MainWindow</span></code></a>()</p></td>
+<td><p>Main window of simple processing dispatcher gui</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="utils">
+<h1>utils<a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>utils<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.checkForCupy.html#oct.checkForCupy" title="oct.checkForCupy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkForCupy</span></code></a>()</p></td>
+<td><p>Master function for checking if cupy exists.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.normalizeData.html#oct.normalizeData" title="oct.normalizeData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalizeData</span></code></a>(mat)</p></td>
+<td><p>Returned data normalized between 0 and 1</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.str2bool.html#oct.str2bool" title="oct.str2bool"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str2bool</span></code></a>(v)</p></td>
+<td><p>Converts a string to boolean</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.closestDividableNumber.html#oct.closestDividableNumber" title="oct.closestDividableNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closestDividableNumber</span></code></a>(n, m)</p></td>
+<td><p>Finds the second closest perfectly divisable number :param n: number to be divided :type n: int :param m: number that divides :type m: int</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.nextPowerOf2.html#oct.nextPowerOf2" title="oct.nextPowerOf2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nextPowerOf2</span></code></a>(x)</p></td>
+<td><p>Return data to the next power of 2 :param n: number in proximity :type n: int</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.rotCartesianInterp.html#oct.rotCartesianInterp" title="oct.rotCartesianInterp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotCartesianInterp</span></code></a>(image[, polarIndex, …])</p></td>
+<td><p>Rotate rectangular b-scans into cartesian circular bscans for endoscopic data</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.showProcessedData.html#oct.showProcessedData" title="oct.showProcessedData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">showProcessedData</span></code></a>(data, processer[, zrange, …])</p></td>
+<td><p>Quick and easy way to view all the processed data contrasts.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="psutils">
+<h2>psUtils<a class="headerlink" href="#psutils" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.stokes.html#oct.stokes" title="oct.stokes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stokes</span></code></a>(tomch1, tomch2)</p></td>
+<td><p>Compute stokes vectors from complex tomograms</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.unweaveInputPolarizations.html#oct.unweaveInputPolarizations" title="oct.unweaveInputPolarizations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unweaveInputPolarizations</span></code></a>(S0, S1, S2, S3)</p></td>
+<td><p>Unweave the modulated input polarizations from stokes vectors</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.filtNormStokes.html#oct.filtNormStokes" title="oct.filtNormStokes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filtNormStokes</span></code></a>(SV1, SV2[, stokesFilter])</p></td>
+<td><p>Filter and normalize stokes vectors</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.constructOrthonormal.html#oct.constructOrthonormal" title="oct.constructOrthonormal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constructOrthonormal</span></code></a>(SVN1, SVN2[, complete])</p></td>
+<td><p>Construct orthonormal tripod from the two input polarization states stokes vectors</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.computeDOP.html#oct.computeDOP" title="oct.computeDOP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">computeDOP</span></code></a>(SV1, SV2, QUV1, QUV2)</p></td>
+<td><p>Compute DOP from filtered and non-filtered data</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.applyRotation.html#oct.applyRotation" title="oct.applyRotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">applyRotation</span></code></a>(MM, rotMatrix)</p></td>
+<td><p>Rotates a measurement matrix by a rotation vector Notes: :param MM: Measurement matrix ([3,3,Nz,Alines,Bins]) :type MM: array :param rotVector: Rotation vector array ([3,3,Bins]) :type rotVector: array</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.getSymmetryCorrection.html#oct.getSymmetryCorrection" title="oct.getSymmetryCorrection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSymmetryCorrection</span></code></a>(MM, dop)</p></td>
+<td><p>Obtain a rotation matrix that can be applied to make the measurement matrix symmetric Notes: :param MM: Measurement matrix ([3,3,Nz,Alines,Bins]) :type MM: array :param dop: Degree of polarization ([3,3,Nz,Alines,Bins]) :type dop: array</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.getBinCorrection.html#oct.getBinCorrection" title="oct.getBinCorrection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBinCorrection</span></code></a>(MM, dop)</p></td>
+<td><p>Obtain a rotation matrix that can be applied to align the spectral bins of the measurement matrix to reduce PMD</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.getCorrectionArray.html#oct.getCorrectionArray" title="oct.getCorrectionArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCorrectionArray</span></code></a>(sv1, sv2[, stokesFilter])</p></td>
+<td><p>Compute the system compensating rotation matrix</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.makeRotationMatrix.html#oct.makeRotationMatrix" title="oct.makeRotationMatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">makeRotationMatrix</span></code></a>(rotVector)</p></td>
+<td><p>Converts rotation vector into 3x3 rotation matrix Notes:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.makeMeasurementMatrix.html#oct.makeMeasurementMatrix" title="oct.makeMeasurementMatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">makeMeasurementMatrix</span></code></a>(SV1, SV2[, stokesFilter])</p></td>
+<td><p>Generate Measurement matrix from raw stokes vectors</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.makeJonesMatrix.html#oct.makeJonesMatrix" title="oct.makeJonesMatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">makeJonesMatrix</span></code></a>(self, retardance[, …])</p></td>
+<td><p>Jones Matrix of a retarder.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.decomposeRot.html#oct.decomposeRot" title="oct.decomposeRot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decomposeRot</span></code></a>(MM[, exact])</p></td>
+<td><p>Decomposes the rotation matrix into the corresponding retardation vector</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.decomposeCorrection.html#oct.decomposeCorrection" title="oct.decomposeCorrection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decomposeCorrection</span></code></a>(correctionMatrix)</p></td>
+<td><p>At the present state, sums the rotational matrices found during PS system characterization. .. note::.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="modules/oct.decomposeJonesMatrix.html#oct.decomposeJonesMatrix" title="oct.decomposeJonesMatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decomposeJonesMatrix</span></code></a>(Jmat)</p></td>
+<td><p>Decompose 2x2 Jones matrix to retardance and diattenuation vectors</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="modules/oct.unwrapCorrection.html#oct.unwrapCorrection" title="oct.unwrapCorrection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unwrapCorrection</span></code></a>(rotCorr[, wrap])</p></td>
+<td><p>Unwrap correction matrix across spectral bins .</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="modules/oct.Post.html" class="btn btn-neutral float-right" title="Post" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, CBORT @ Wellman.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

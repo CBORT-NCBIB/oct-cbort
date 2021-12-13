@@ -1,0 +1,4 @@
+decomposeJonesMatrix
+====================
+
+.. autofunction:: oct.decomposeJonesMatrix

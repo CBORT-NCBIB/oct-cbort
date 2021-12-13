@@ -1,0 +1,4 @@
+unweaveInputPolarizations
+=========================
+
+.. autofunction:: oct.unweaveInputPolarizations

@@ -1,0 +1,4 @@
+computeDOP
+==========
+
+.. autofunction:: oct.computeDOP

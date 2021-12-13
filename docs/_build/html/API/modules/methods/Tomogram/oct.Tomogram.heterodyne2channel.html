@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Tomogram.heterodyne2channel &mdash; oct-cbort 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Tomogram.initialize" href="oct.Tomogram.initialize.html" />
+    <link rel="prev" title="Tomogram.heterodyne1channel" href="oct.Tomogram.heterodyne1channel.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> oct-cbort
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html">oct-cbort</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../oct.html">oct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../oct.html#load">load</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../oct.html#reconstruct">reconstruct</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../../../oct.html#tomogram">tomogram</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../../oct.Tomogram.html">Tomogram</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../oct.html#structure">structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../oct.html#angiography">angiography</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../oct.html#polarization">polarization</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../oct.html#write">write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../oct.html#view">view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../oct.html#gui">gui</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../oct.html#utils">utils</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">oct-cbort</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">API Reference</a> &raquo;</li>
+        
+          <li><a href="../../../oct.html">oct</a> &raquo;</li>
+        
+          <li><a href="../../oct.Tomogram.html">Tomogram</a> &raquo;</li>
+        
+      <li>Tomogram.heterodyne2channel</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../../_sources/API/modules/methods/Tomogram/oct.Tomogram.heterodyne2channel.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tomogram-heterodyne2channel">
+<h1>Tomogram.heterodyne2channel<a class="headerlink" href="#tomogram-heterodyne2channel" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="oct.Tomogram.heterodyne2channel">
+<code class="sig-prename descclassname">oct.Tomogram.</code><code class="sig-name descname">heterodyne2channel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#oct.Tomogram.heterodyne2channel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute an optical coherence tomogram using heterodyne 2-channel polarization diverse detection</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If PS reconstruction enabled, both am unbinned and a binned complex tomogram  will be produced.
+Reference(s):
+Tomogram reconstruction:
+[1] Yun, S., Tearney, G., de Boer, J., Iftimia, N., &amp; Bouma, B. (2003).</p>
+<blockquote>
+<div><p>High-speed optical frequency-domain imaging. Optics Express, 11(22), 2953.
+<a class="reference external" href="https://doi.org/10.1364/oe.11.002953">https://doi.org/10.1364/oe.11.002953</a></p>
+</div></blockquote>
+<dl class="simple">
+<dt>[2] Motaghian Nezam, S. M. R., Vakoc, B. J., Desjardins, A. E., Tearney, G. J., &amp; Bouma, B. E. (2007).</dt><dd><p>Increased ranging depth in optical frequency domain imaging by frequency encoding. Optics Letters,
+32(19), 2768.
+<a class="reference external" href="https://doi.org/10.1364/ol.32.002768">https://doi.org/10.1364/ol.32.002768</a></p>
+</dd>
+</dl>
+<p>Stokes Vector calculation:
+[1] Park BH, Pierce MC, Cense B, de Boer JF.</p>
+<blockquote>
+<div><p>Real-time multi-functional optical coherence tomography.
+Opt Express. 2003;11(7):782–793</p>
+</div></blockquote>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param1</strong> (<em>obj</em>) – data</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>self.processedData[‘tomch1’], self.processedData[‘tomch2’], self.SV1, self,SV2</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="oct.Tomogram.initialize.html" class="btn btn-neutral float-right" title="Tomogram.initialize" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="oct.Tomogram.heterodyne1channel.html" class="btn btn-neutral float-left" title="Tomogram.heterodyne1channel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, CBORT @ Wellman.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,4 +1,0 @@
-decomposeRot
-============
-
-.. autofunction:: oct.decomposeRot

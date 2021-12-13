@@ -1,4 +1,0 @@
-unwrapCorrection
-================
-
-.. autofunction:: oct.unwrapCorrection

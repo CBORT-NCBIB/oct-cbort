@@ -1,4 +1,0 @@
-getSymmetryCorrection
-=====================
-
-.. autofunction:: oct.getSymmetryCorrection

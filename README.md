@@ -1,10 +1,16 @@
 
 # README - oct-cbort
 
-A python package for reconstructing raw OCT/OFDI data from the Center for Biomedical OCT Research @ The Wellman Center for Photomedicine.  
-[https://octresearch.org/](https://octresearch.org/)
+This library aims to provide entire processing library (in Python) that is used by the OCT research groups within the Center for Biomedical OCT Research ([CBORT](https://octresearch.org/)) directed by Professor Brett E. Bouma at The Wellman Center for Photomedicine. We aim to provide processing framework for structure, angiography, polarization-senstive OCT that we use for our own and collaborative research projects. 
 
-The library was developped by the labs of Professor Ben Vakoc and Professor Brett Bouma. 
+This library is developed by the following members of the CBORT:
+
+* Damon DePaoli ([depaoli9](https://github.com/depaoli9); Lead Developer)
+* A. Stephanie Nam ([sweetzinc](https://github.com/sweetzinc); Co-developer and current maintainer)
+* Martin Villiger (mvilli; Advisor)
+* Benjamin J. Vakoc (bvakoc; Advisor)
+
+With the support from P41EB015903, awarded by the National Institute of Biomedical Imaging and Bioengineering of the National Institutes of Health.
 
 ### Background:
 Unlike traditional imaging modalities, OCT contrasts requires "reconstruction" of the acquired interferometric fringes. With this in mind, the `oct-cbort` Python package serves the following purposes:
@@ -55,7 +61,7 @@ Unlike traditional imaging modalities, OCT contrasts requires "reconstruction" o
 
 ### Usage tutorials:
 
-Jupyter notebook tutorials are found in /tutorials. These notebooks show how to use the library for more technical scripting purposes. Best practice is to run all tutorials right after installing oct-cbort repository to get familiar with the extended funcitonality.
+Jupyter notebook tutorials are found in `/tutorials`. These notebooks show how to use the library for more technical scripting purposes. Best practice is to run all tutorials right after installing oct-cbort repository to get familiar with the extended funcitonality.
 
 ### Contributing:
 
@@ -67,11 +73,11 @@ If there are issues or bugs, please submit as much information as possible to th
  
 
 ### Documentation
-
-While the repository is not currently public, and therefore there is no public document hosting, we do provide some _unfinished_ documentation!
+The documentation is under active development at this point. However, the library follows [ Numpy Docstring format](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html) and the API information can be found directly on the source code. 
+<!-- While the repository is not currently public, and therefore there is no public document hosting, we do provide some _unfinished_ documentation!
 
 To view the documentation, simply navigate to the oct-cbort directory and type the following in the cmd\terminal:
 
 ` python docs\docs.py`
 
-This will launch the built html files in your web browser.
+This will launch the built html files in your web browser. -->

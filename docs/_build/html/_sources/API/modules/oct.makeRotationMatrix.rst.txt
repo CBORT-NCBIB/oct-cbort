@@ -1,4 +1,0 @@
-makeRotationMatrix
-==================
-
-.. autofunction:: oct.makeRotationMatrix

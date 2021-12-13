@@ -1,4 +1,0 @@
-applyRotation
-=============
-
-.. autofunction:: oct.applyRotation

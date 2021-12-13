@@ -1,4 +1,0 @@
-getBinCorrection
-================
-
-.. autofunction:: oct.getBinCorrection

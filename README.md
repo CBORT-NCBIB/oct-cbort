@@ -1,14 +1,14 @@
 
 # README - oct-cbort
 
-This library aims to provide entire processing library (in Python) that is used by the OCT research groups within the Center for Biomedical OCT Research ([CBORT](https://octresearch.org/)) directed by Professor Brett E. Bouma at The Wellman Center for Photomedicine. We aim to provide processing framework for structure, angiography, polarization-senstive OCT that we use for our own and collaborative research projects. 
+This library aims to provide entire processing library (in Python) that is used by the OCT research groups within the Center for Biomedical OCT Research ([CBORT](https://octresearch.org/)) at The Wellman Center for Photomedicine. We aim to provide processing framework for structure, angiography, polarization-senstive OCT that we use for our own and collaborative research projects. 
 
-This library is developed by the following members of the CBORT:
+This library is developed by the following members of the CBORT directed by Professor Brett E. Bouma:
 
 * Damon DePaoli ([depaoli9](https://github.com/depaoli9); Lead Developer)
-* A. Stephanie Nam ([sweetzinc](https://github.com/sweetzinc); Co-developer and current maintainer)
-* Martin Villiger (mvilli; Advisor)
-* Benjamin J. Vakoc (bvakoc; Advisor)
+* A. Stephanie Nam ([sweetzinc](https://github.com/sweetzinc); Co-developer, provided MATLAB module for OCTA, current maintainer)
+* [Martin Villiger](mailto:MVILLIGER@mgh.harvard.edu) (Primary advisor, provided MATLAB reconstruction scripts for PS-OCT)
+* Benjamin J. Vakoc (Co-advisor)
 
 With the support from P41EB015903, awarded by the National Institute of Biomedical Imaging and Bioengineering of the National Institutes of Health.
 

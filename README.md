@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/424591742.svg)](https://zenodo.org/badge/latestdoi/424591742)
 
 # README - oct-cbort
 
